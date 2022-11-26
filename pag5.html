@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 5</title>
+</head>
+<body>  
+    <h1>Calculo de assentamento de piso </h1>
+    Digite a largura total do cômodo em M <input type="number" id="ltc"> <br> <br>
+    Digite o comprimento total do cômodo em M <input type="number" id="ctc"><br> <br>
+    <script>
+        function calcular(){
+        var largura= document.getElementById("ltc").value; 
+        var comprimento=document.getElementById("ctc").value;;
+        var multi= (largura*comprimento);
+        var total= (multi*36);
+        alert("O valor total é "+total+ " reais");
+    }
+    </script>
+    <input type="button" value="Calcular" onclick="calcular()">
+</body>
+</html>

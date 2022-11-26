@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ 3</title>
+</head>
+
+<body>
+    <h1>Produto 1</h1>
+    Digite o nome do primeiro produto <input type="text" id="nomepro"> <br> <br>
+    Digite o preço do primeiro produto <input type="number" id="preco"> <br> <br>
+    Digite a quantidade do primeiro produto <input type="number" id="quantidade"> <br> <br>
+
+    <h1>Produto 2 </h1>
+    Digite o nome do segundo produto <input type="text" id="nomepro"> <br> <br>
+    Digite o preço do segundo produto <input type="number" id="preco"> <br> <br>
+    Digite a quantidade do segundo produto <input type="number" id="quantidade"> <br> <br>
+
+    <h1>Produto 3 </h1>
+    Digite o nome do terceiro produto <input type="text" id="nomepro"> <br> <br>
+    Digite o preço do terceiro produto <input type="number" id="precoo"> <br> <br>
+    Digite a quantidade do terceiro produto <input type="number" id="quantidade"> <br> <br>
+
+    <script>
+        function Calcular() {
+            var nome_pro = document.getElementById("nomepro").value;
+            var preco = document.getElementById("precoo").value;
+            var qnt = document.getElementById("quantidade").value;
+            var valor1 = (preco * qnt);
+
+            var nome_pro = document.getElementById("nomepro").value;
+            var preco = document.getElementById("precoo").value;
+            var qnt = document.getElementById("quantidade").value;
+            var valor2 = (preco * qnt);
+
+            var nome_pro = document.getElementById("nomepro").value;
+            var preco = document.getElementById("precoo").value;
+            var qnt = document.getElementById("quantidade").value;
+            var valor3 = (preco * qnt);
+
+            var total = (valor1 + valor2 + valor3);
+            alert("O valor total é " + total);
+        }
+    </script>
+    <input type="button" value="Ver preço" onclick="Calcular()">
+</body>
+
+</html>

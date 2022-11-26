@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ativ 4</title>
+</head>
+<body>
+  <h1>Calculadora </h1> <br>
+  Digite a quilometragem percorrida <input type="number" id="km"> <br><br>
+  Digite o valor atual do combustivel <input type="number" id="preco"><br><br>
+  <script>
+    function calcular(){
+    var km= document.getElementById("km").value;
+    var preco_c= document.getElementById("preco").value;
+    var total=((preco_c/8)*km);
+    alert("O valor total é: "+total);
+}
+
+  </script>  
+<input type="button" value="Calcular" onclick="calcular()">
+  
+</body>
+</html>

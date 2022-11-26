@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 2</title>
+</head>
+
+
+<body>
+  <h1>Calculadora Conversão de Temperatura</h1>
+  Selecione a medida de temperatura que sera colocada
+  <select id="medida">
+    <option value="f">
+      <h2>Fahrenheit</h2>
+    </option>
+    <option value="c">
+      <h2>Celsius</h2>
+    </option>
+
+  </select>
+  <br> <br> <br>
+  Digite a temperatura <input type="number" id="temperatura">
+  <br> <br>
+  <script>
+    function calcular() {
+      var medida= document.getElementById("medida").value;
+      var temperatura = document.getElementById("temperatura").value;
+      if (medida == "f" || medida=="Fahrenheit") {
+        var resultado = (temperatura - 32) / 1.8;
+        alert("O resultado em celsius é " + resultado);
+      }
+      else if (medida == "c" || medida=="Celsius") {
+        var resultado = (temperatura * 1.8) + 32;
+        alert("O resultado em Fahrenheit é " + resultado);
+      }
+      else{
+        alert(error);
+      }
+    }
+  </script>
+  <input type="button" value="Calcular" onclick="calcular()">
+
+
+
+
+</body>
+
+</html>
